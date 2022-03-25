@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "zenk-fellings",
+    "slug": "zenk-fellings",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
