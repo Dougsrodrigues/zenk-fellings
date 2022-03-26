@@ -4,7 +4,7 @@ import {
   HttpRequest,
   HttpResponse,
   HttpStatusCode,
-} from '../../../domain/types/http-interfaces';
+} from '~/app/domain/types/http-interfaces';
 
 export class AxiosHttpClient implements HttpClient {
   constructor(private readonly api: AxiosInstance) {}

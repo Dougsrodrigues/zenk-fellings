@@ -2079,6 +2079,13 @@ babel-plugin-react-native-web@~0.17.1:
   resolved "https://registry.yarnpkg.com/babel-plugin-react-native-web/-/babel-plugin-react-native-web-0.17.7.tgz#1580e27a2e3c6692127535d3880fe1e247ef6414"
   integrity sha512-UBLfIsfU3vi//Ab4i0WSWAfm1whLTK9uJoH0RPZ6a67eS/h9JGYjKy7+1RpHxSBviHi9NIMiYfWseTLjyIsE1g==
 
+babel-plugin-root-import@^6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-root-import/-/babel-plugin-root-import-6.6.0.tgz#85940840f308a8c292f66ca0b5bdd314046273ed"
+  integrity sha512-SPzVOHd7nDh5loZwZBxtX/oOu1MXeKjTkz+1VnnzLWC0dk8sJIGC2IDQ2uWIBjE5mUtXlQ35MTHSqN0Xn7qHrg==
+  dependencies:
+    slash "^3.0.0"
+
 "babel-plugin-styled-components@>= 1.12.0":
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-2.0.6.tgz#6f76c7f7224b7af7edc24a4910351948c691fc90"
