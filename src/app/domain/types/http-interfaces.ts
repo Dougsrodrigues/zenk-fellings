@@ -5,7 +5,12 @@ export type HttpRequest = {
   headers?: any;
 };
 
-export type HttpMethod = 'post' | 'get' | 'put' | 'delete';
+export enum HttpMethod {
+  post = 'post',
+  get = 'get',
+  put = 'put',
+  delete = 'delete',
+}
 
 export enum HttpStatusCode {
   ok = 200,
