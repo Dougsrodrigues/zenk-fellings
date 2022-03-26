@@ -22,7 +22,7 @@ export interface HttpClient<R = any> {
 }
 
 export type HttpResponse<T = any> = {
-  data: T;
+  httpDataResponse: T;
   httpStatus: HttpStatusCode;
 };
 

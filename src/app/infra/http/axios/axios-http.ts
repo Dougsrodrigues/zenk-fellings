@@ -10,7 +10,7 @@ export class AxiosHttpClient implements HttpClient {
   constructor(private readonly api: AxiosInstance) {}
 
   async request(params: HttpRequest): Promise<HttpResponse> {
-    let data: AxiosResponse;
+    let httpDataResponse: AxiosResponse;
     let httpStatus: HttpStatusCode;
 
     try {
@@ -21,15 +21,15 @@ export class AxiosHttpClient implements HttpClient {
         headers: params.headers,
       });
 
-      data = response.data;
+      httpDataResponse = response.data;
       httpStatus = response.status as HttpStatusCode;
     } catch (error) {
-      data = error;
+      httpDataResponse = error;
       httpStatus = error.status as HttpStatusCode;
     }
 
     const httpResponse = {
-      data,
+      httpDataResponse,
       httpStatus,
     };
 
