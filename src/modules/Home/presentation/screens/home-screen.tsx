@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import styled from 'styled-components/native';
-import { IGetFeelingsUseCase } from '../../domain/use-cases/get-fellings-use-case-interface';
+import { IGetFeelingsUseCase } from '../../domain/use-cases/get-feelings-use-case-interface';
 import { useGetFeelings } from '../hooks/useGetFeelings';
 
 interface HomeScreenProps {

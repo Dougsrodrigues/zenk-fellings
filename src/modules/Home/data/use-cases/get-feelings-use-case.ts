@@ -6,10 +6,10 @@ import {
   HttpStatusCode,
 } from '~/app/domain/types/http-interfaces';
 import { Feelings } from '../../domain/types';
-import { IGetFeelingsUseCase } from '../../domain/use-cases/get-fellings-use-case-interface';
+import { IGetFeelingsUseCase } from '../../domain/use-cases/get-feelings-use-case-interface';
 
 export class GetFeelingsUseCase implements IGetFeelingsUseCase {
-  endpoint = `/fellings`;
+  endpoint = `/feelings`;
 
   constructor(private readonly httpClient: HttpClient<Feelings[]>) {}
 
