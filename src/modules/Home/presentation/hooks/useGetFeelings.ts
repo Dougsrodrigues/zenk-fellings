@@ -7,7 +7,7 @@ interface UseGetFeelingsProps {
 export const useGetFeelings = ({ getFeelingsUseCase }: UseGetFeelingsProps) => {
   const { data, isLoading, isError, error } = useDataFetchingAdapter(
     'get-feelings',
-    () => getFeelingsUseCase.getFeelings(),
+    () => getFeelingsUseCase.execute(),
   );
 
   return { data, isLoading, isError, error };

@@ -9,11 +9,11 @@ import { Feelings } from '../../domain/types';
 import { IGetFeelingsUseCase } from '../../domain/use-cases/get-fellings-use-case-interface';
 
 export class GetFeelingsUseCase implements IGetFeelingsUseCase {
-  endpoint = `/fellingss`;
+  endpoint = `/fellings`;
 
   constructor(private readonly httpClient: HttpClient<Feelings[]>) {}
 
-  async getFeelings(): Promise<Feelings[]> {
+  async execute(): Promise<Feelings[]> {
     const data = await this.httpClient.request({
       url: this.endpoint,
       method: HttpMethod.get,
