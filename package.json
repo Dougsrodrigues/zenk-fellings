@@ -10,6 +10,8 @@
     "server": "json-server --watch db.json"
   },
   "dependencies": {
+    "@react-navigation/native": "^6.0.8",
+    "@react-navigation/native-stack": "^6.5.2",
     "axios": "^0.26.1",
     "expo": "~44.0.2",
     "expo-splash-screen": "~0.14.1",
@@ -17,6 +19,10 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
+    "react-native-gesture-handler": "^2.3.2",
+    "react-native-reanimated": "^2.5.0",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "^3.13.1",
     "react-query": "^3.34.18",
     "styled-components": "^5.3.5"
   },

@@ -1,5 +1,5 @@
-import { Fellings } from '../types';
+import { Feelings } from '../types';
 
-export interface IGetFillingsUseCase {
-  getFellings: () => Promise<Fellings[]>;
+export interface IGetFeelingsUseCase {
+  getFeelings: () => Promise<Feelings[]>;
 }

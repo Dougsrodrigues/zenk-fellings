@@ -1,4 +1,4 @@
-export type Fellings = {
+export type Feelings = {
   icon: string;
   name: string;
 };

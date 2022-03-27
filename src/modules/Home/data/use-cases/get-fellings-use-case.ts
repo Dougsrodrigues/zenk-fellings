@@ -5,15 +5,15 @@ import {
   HttpMethod,
   HttpStatusCode,
 } from '~/app/domain/types/http-interfaces';
-import { Fellings } from '../../domain/types';
-import { IGetFillingsUseCase } from '../../domain/use-cases/get-fellings-use-case-interface';
+import { Feelings } from '../../domain/types';
+import { IGetFeelingsUseCase } from '../../domain/use-cases/get-fellings-use-case-interface';
 
-export class GetFillingsUseCase implements IGetFillingsUseCase {
-  endpoint = `/fellings`;
+export class GetFeelingsUseCase implements IGetFeelingsUseCase {
+  endpoint = `/fellingss`;
 
-  constructor(private readonly httpClient: HttpClient<Fellings[]>) {}
+  constructor(private readonly httpClient: HttpClient<Feelings[]>) {}
 
-  async getFellings(): Promise<Fellings[]> {
+  async getFeelings(): Promise<Feelings[]> {
     const data = await this.httpClient.request({
       url: this.endpoint,
       method: HttpMethod.get,
